@@ -23,7 +23,7 @@ h1,h2,h3,p{
 .link {
   /* outline: none; */
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .page-header {
   border-bottom: 1px solid #ECECEC;;
@@ -74,7 +74,7 @@ h1,h2,h3,p{
   padding-top:32px;
   padding-bottom: 32px;
   position: relative;
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .current::after {
     position: absolute;
@@ -108,7 +108,7 @@ padding-bottom: 32px;}
   padding-bottom: 32px;
   display: block;
   fill: currentColor;
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav-item:not(:last-child) {
   margin-right: 50px;
@@ -327,7 +327,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   height: 44px;
   border-radius: 50%;
   fill: #AFB1B8;
-  
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:focus,
 .footer-social-link:hover,
@@ -335,6 +336,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 .social-link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
+
 }
 .clients {
   padding-top: 94px;
@@ -356,6 +358,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   border-radius: 4px;
   padding: 16px 32px;
   fill: #AFB1B8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus{
@@ -384,12 +388,14 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   line-height:1.71;
   color: var(--accent-color-text);
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item {
   font-size: 14px;
   line-height: 1.71;
 
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .map-link:hover,
 .map-link:focus,
@@ -422,8 +428,12 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   border-radius: 50%;
   background-color: #43444D;
   padding: 12px;
-  fill: #FFFFFF
+  fill: #FFFFFF;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 
 .social-navigation{
@@ -456,6 +466,9 @@ padding-bottom: 50px;
   line-height:1.62;
 
   color: var(--title-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-button:hover,
 .projects-button:focus {
